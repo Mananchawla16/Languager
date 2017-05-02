@@ -23,7 +23,11 @@
             android:label="@string/title_activity_home_page"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".FrenchBuffer" />
-        <activity android:name=".FrenchOptions"></activity>
+        <activity android:name=".FrenchOptions" />
+        <activity android:name=".FrenchBasics" />
+        <activity android:name=".FrenchAnimals" />
+        <activity android:name=".FrenchColors" />
+        <activity android:name=".FrenchFood"></activity>
     </application>
 
 </manifest>

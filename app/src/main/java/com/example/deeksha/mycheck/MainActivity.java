@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        View Sview = getWindow().getDecorView();
+        int FSCR = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        Sview.setSystemUiVisibility(FSCR);
         intromanager=new IntroManager(this);
         if(!intromanager.Check()){
             intromanager.setFirst(false);

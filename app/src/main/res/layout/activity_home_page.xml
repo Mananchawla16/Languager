@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.deeksha.mycheck.HomePage">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="70dp"
+        >
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="An Awesome Choice"
+            android:background="@android:color/transparent"
+            android:textSize="25dp"
+            android:textColor="@color/screen2"
+            android:cursorVisible="false"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_marginTop="19dp" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="299dp"
+            android:layout_height="315dp"
+            app:srcCompat="@drawable/french5"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="98dp"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/editText5"
+            android:layout_centerHorizontal="true" />
 
-    </android.support.design.widget.AppBarLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="97dp"
+            android:layout_height="148dp"
+            app:srcCompat="@drawable/bluearrow"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="384dp"
+            android:layout_marginTop="301dp"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_alignRight="@+id/imageView1"
+            android:layout_alignEnd="@+id/imageView1" />
 
-    <include layout="@layout/content_home_page" />
+    </RelativeLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
-</android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

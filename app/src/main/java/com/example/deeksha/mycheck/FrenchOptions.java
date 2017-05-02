@@ -27,8 +27,8 @@ public class FrenchOptions extends AppCompatActivity {
                         "Basics",
                         Toast.LENGTH_SHORT
                 ).show();
-//                Intent i = new Intent(FrenchOptions.this, FrenchBasics.class);
-//                startActivity(i);
+                Intent i = new Intent(FrenchOptions.this, FrenchBasics.class);
+                startActivity(i);
             }
         });
 
